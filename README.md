@@ -32,8 +32,8 @@ Discord上名为Blargbot的机器人提供了一套仿脚本语言BBtag，它允
 b!ccommand install <code–URL>
 ```
 其中`<Code–URL>`是本项目源码json文件的链接地址，你可以在release界面中找到。***不应当使用仓库中未格式化的txt源码文件，这会引发错误。***
-3. 在BOT提示的界面中确认安装，即可完成安装流程。
-4. 额外地，你还可以使用
+3.在BOT提示的界面中确认安装，即可完成安装流程。
+4.额外地，你还可以使用
 ```
 b!ccommand set profile <code>
 ```
