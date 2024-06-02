@@ -1,0 +1,15 @@
+{set;~wait;{send;;🔎｜北斗卫星正在为您全力查找目标资料，稍等片刻...}}{sleep;0.8s}{delete;{get;~wait}}
+{if;{argslength};<;1;⛵️｜交几个新朋友再来？空气可没有档案资料喵。{return}}
+{if;{userid;{args;0};quite};==;;✈️｜此人似乎飞去旅行了，重新输入有效用户信息吧～{return}}
+{set;~profile;{get;_{userid;{args;0}}:profile}}
+{if;{!;{contains;{get;~profile};{lb};{rb}}};<:sad:1191224957401841734>｜此人未有效设置档案资料，无法查看呜呜(ノ_＜){return}}
+{send;;;{embedBuild;
+  title:{jsonget;~profile;system.name};
+  description:**系统类型:{jsonget;~profile;system.category}**{newline}{jsonget;~profile;system.profile};
+  footer.icon_url:{useravatar;{args;0}};
+  footer.text:绑定用户:{username;{args;0}};
+  color:#50E3C2;
+  author.name:多意识体档案管理面板＞查看资料;
+  author.icon_url:https://s2.loli.net/2024/06/02/F3RHpcuzDU9gAKQ.png;
+  thumbnail.url:{jsonget;~profile;system.avatar}}}
+{regexreplace;/.+/;}
