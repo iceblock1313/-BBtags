@@ -27,17 +27,16 @@ Discord上名为Blargbot的机器人提供了一套仿脚本语言BBtag，它允
 
 安装本项目的要求非常简单，请遵循以下步骤：
 
-1.登录你的Discord账号，[邀请Blargbot](https://blargbot.xyz/invite)到你的服务器。为了保证本项目正常运行，建议使用完整邀请，或给予Blargbot可允许范围内的最大权限。
+1.登录你的Discord账号，[邀请Blargbot](https://blargbot.xyz/invite)到你的服务器。为了保证脚本正常运行，建议使用完整邀请，或给予Blargbot可允许范围内的最大权限。
 
 2.在服务器内的任意频道键入：(Blargbot必须拥有访问权限和查看消息权限)
 ```
-b!ccommand install <code–URL>
+b!ccommand install <Code–URL>
 ```
-其中`<Code–URL>`是本项目源码json文件的链接地址，你可以在release界面中找到。***不应当使用仓库中未格式化的txt源码文件，这会引发错误。***
+其中`<Code–URL>`是本项目源码json文件的链接地址，你可以在release界面中找到。***不应当使用仓库中未格式化的bbtag源码文件，这会引发错误。***
 
 3.在BOT提示的界面中确认安装，完成安装流程。
 
 ## 使用指南
-命令.profile用于管理档案面板，不带参运行时显示帮助菜单
-
-命令.w用于查看档案资料
+命令`b!profile`用于编辑档资料，不带参运行时显示帮助菜单。
+命令`.b!w <用户>`用于查看档案资料。
